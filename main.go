@@ -72,6 +72,7 @@ func RunDexecContainer(cliParser cli.CLI) int {
 		util.AddPrefix(options[cli.Arg], "-a"),
 	)
 
+	log.Println(entrypointArgs)
 	container, err := client.CreateContainer(docker.CreateContainerOptions{
 		Config: &docker.Config{
 			Image:     dockerImage,
@@ -79,7 +80,13 @@ func RunDexecContainer(cliParser cli.CLI) int {
 			StdinOnce: true,
 			OpenStdin: true,
 		},
-	})
+		HostConfig: &docker.HostConfig{
+                	Binds: dexec.BuildVolumeArgs(
+                        util.RetrievePath(options[cli.TargetDir]),
+                        append(options[cli.Source], options[cli.Include]...)),
+		},
+		},
+	)
 
 	if err != nil {
 		log.Fatal(err)
@@ -92,6 +99,10 @@ func RunDexecContainer(cliParser cli.CLI) int {
 			log.Fatal(err)
 		}
 	}()
+	
+	log.Println(dexec.BuildVolumeArgs(
+                        util.RetrievePath(options[cli.TargetDir]),
+                        append(options[cli.Source], options[cli.Include]...)))
 
 	if err = client.StartContainer(container.ID, &docker.HostConfig{
 		Binds: dexec.BuildVolumeArgs(
