@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/docker-exec/dexec",
+	"ImportPath": "github.com/johnnyeric/dexec",
 	"GoVersion": "go1.6",
 	"GodepVersion": "v74",
 	"Packages": [
