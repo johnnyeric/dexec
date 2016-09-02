@@ -7,9 +7,9 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/docker-exec/dexec/cli"
-	"github.com/docker-exec/dexec/dexec"
-	"github.com/docker-exec/dexec/util"
+	"github.com/johnnyeric/dexec/cli"
+	"github.com/johnnyeric/dexec/dexec"
+	"github.com/johnnyeric/dexec/util"
 	"github.com/fsouza/go-dockerclient"
 )
 

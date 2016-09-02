@@ -4,7 +4,7 @@ These are the guidelines for contributing to the ```dexec``` CLI and also applie
 
 ## Creating issues
 
-Please consult the [reference section](https://github.com/docker-exec/dexec/blob/master/README.md#reference) of the README before creating issues. It may contain the answer to your problem.
+Please consult the [reference section](https://github.com/johnnyeric/dexec/blob/master/README.md#reference) of the README before creating issues. It may contain the answer to your problem.
 
 ## Code
 
@@ -34,7 +34,7 @@ go test ./...
 
 ## Acceptance Tests
 
-A suite of acceptance tests can be found in the [dexec/_bats](https://github.com/docker-exec/dexec/tree/master/_test) folder. If you are adding a new image, you must also add to the acceptance tests.
+A suite of acceptance tests can be found in the [dexec/_bats](https://github.com/johnnyeric/dexec/tree/master/_test) folder. If you are adding a new image, you must also add to the acceptance tests.
 
 Vagrant's VirtualBox provider is used to spin up an Ubuntu VM on which Docker is installed. The current ```dexec``` folder is mounted in the VM, built and then run against four [bats](https://github.com/sstephenson/bats) tests for each docker-exec image. The tests are:
 

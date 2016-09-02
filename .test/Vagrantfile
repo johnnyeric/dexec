@@ -3,7 +3,7 @@
 
 Vagrant.configure(2) do |config|
   config.vm.box = 'ubuntu/trusty64'
-  
+
   config.vm.provider "virtualbox" do |v|
     v.name = "dexec-acceptance-tests"
   end
@@ -42,9 +42,9 @@ Vagrant.configure(2) do |config|
     add_if_not_in_file '/home/vagrant/.profile' 'export PATH=$PATH:$GOPATH/bin'
 
     touch /home/vagrant/.hushlogin
-    mkdir -p /home/vagrant/.go/src/github.com/docker-exec/
+    mkdir -p /home/vagrant/.go/src/github.com/johnnyeric/
     chown -R vagrant:vagrant /home/vagrant/.go
   SHELL
 
-  config.vm.synced_folder '..', '/home/vagrant/.go/src/github.com/docker-exec/dexec'
+  config.vm.synced_folder '..', '/home/vagrant/.go/src/github.com/johnnyeric/dexec'
 end

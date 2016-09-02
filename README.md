@@ -23,7 +23,7 @@ Binaries for other distributions are available on [Bintray](https://bintray.com/
 If you have >= Go 1.5 installed and configured correctly, you can install ```dexec``` with the ```go get``` command. For Go 1.5 the ```GO15VENDOREXPERIMENT``` environment variable needs to be set so that dependencies in the vendor directory will be used.
 
 ```sh
-$ go get github.com/docker-exec/dexec
+$ go get github.com/johnnyeric/dexec
 ```
 
 ### Using Homebrew
@@ -184,19 +184,19 @@ $ ./foo.cpp
 
 ## Contributors
 
-#### [docker-exec/dexec](https://github.com/docker-exec/dexec/graphs/contributors)
+#### [docker-exec/dexec](https://github.com/johnnyeric/dexec/graphs/contributors)
 
  * [Alix Axel](https://github.com/alixaxel)
  * [kroton](https://github.com/kroton)
  * [John Albietz](https://github.com/inthecloud247)
 
-#### [docker-exec/perl](https://github.com/docker-exec/perl/graphs/contributors)
+#### [docker-exec/perl](https://github.com/johnnyeric/perl/graphs/contributors)
 
  * [Øyvind Skaar](https://github.com/oyvindsk)
 
 ## See also
 
 * [Docker Exec GitHub Page](https://docker-exec.github.io/)
-* [Docker Exec GitHub Repositories](https://github.com/docker-exec)
+* [Docker Exec GitHub Repositories](https://github.com/johnnyeric)
 * [Docker Exec Images on Docker Hub](https://hub.docker.com/r/dexec/)
 * [dexec on Bintray](https://bintray.com/dexec/release/dexec/view)

@@ -54,7 +54,7 @@ function run() {
     echo "Skipping restore to initial state"
   fi
   vagrant ssh -c "
-  cd /home/vagrant/.go/src/github.com/docker-exec/dexec
+  cd /home/vagrant/.go/src/github.com/johnnyeric/dexec
   go get
   go install
   bats .test/bats/dexec.bats"

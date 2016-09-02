@@ -5,9 +5,9 @@ import (
 	"log"
 	"regexp"
 
-	"github.com/docker-exec/dexec/cli"
+	"github.com/johnnyeric/dexec/cli"
 
-	"github.com/docker-exec/dexec/util"
+	"github.com/johnnyeric/dexec/util"
 	"github.com/fsouza/go-dockerclient"
 )
 
